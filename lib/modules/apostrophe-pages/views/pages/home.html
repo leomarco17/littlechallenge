@@ -1,0 +1,224 @@
+{#
+  This is an example home page template. It inherits and extends a layout template
+  that lives in the top-level views/ folder for convenience
+#}
+
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+
+  <div class="main-content">
+    <h3>Get to know me !!!
+      {% if not data.user %}
+        <a class="login-link" href="/login">Login</a>
+      {% endif %}
+    </h3>
+
+    <div class="table-1">
+    <table width ="100%">
+      <thead>
+
+        <tr>
+
+          <th align="left">I am</th>
+          <th align="center">Things I like</th>
+          <th align="left">Things I don't like</th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+          26 years old
+          </td>
+          <td>
+          I love my dogs
+          </td>
+          <td>
+          Crowds
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          Uruguayan
+          </td>
+          <td>
+          Winter
+          </td>
+          <td>
+          Summer
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          A series lover
+          </td>
+          <td>
+          Netflix
+          </td>
+          <td>
+          Bad internet conection
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          Honest
+          </td>
+          <td>
+          This job
+          </td>
+          <td>
+          Not getting it
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+   </div>
+
+
+<br></br>
+    <h3>Here you can find some events
+      {% if not data.user %}
+        <a class="login-link" href="/login">Login</a>
+      {% endif %}
+    </h3>
+
+    <div class="table-1">
+    <table width ="100%">
+      <thead>
+
+        <tr>
+
+          <th align="left">Date & City</th>
+          <th align="center">Event Details</th>
+          <th align="left">Ticketing / Signup</th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+          14 Jan (11AM) – London U.K. (
+          <a href="https://conwayhall.org.uk/about/visiting-us/">Conway Hall</a>
+          )
+          </td>
+          <td>
+          <a href="http://www.howtoacademy.com/courses/12-rules-life-antidote-chaos-jordan-b-peterson-14012018-morning?utm_source=How+To+Academy+List&amp;utm_campaign=bbb245de4e-09012018+Jordan+Peterson+3rd%26+more+%28HtA%29&amp;utm_medium=email&amp;utm_term=0_857e8c205c-bbb245de4e-55214181&amp;mc_cid=bbb245de4e&amp;mc_eid=ad614dc7e9">12 Rules for Life: An Antidote to Chaos</a>
+          </td>
+          <td>
+          Sold Out (
+          <a href="https://www.eventbrite.co.uk/e/how-to-12-rules-for-life-an-antidote-to-chaos-with-jordan-b-peterson-tickets-41946401817?aff=es2">info</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          14 Jan (5PM) – London U.K. (
+          <a href="http://www.emmanuelcentre.com/">Emmanuel Centre</a>
+          )
+          </td>
+          <td>
+          <a href="https://www.eventbrite.co.uk/e/how-to-12-rules-for-life-an-antidote-to-chaos-with-jordan-b-peterson-tickets-41215680209">12 Rules for Life: An Antidote to Chaos</a>
+
+          </td>
+          <td>
+          Sold Out (
+          <a href="http://bit.ly/2E9KE4p">info</a>
+          )
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          15 Jan – London U.K. (
+          <a href="http://www.emmanuelcentre.com/">Emmanuel Centre</a>
+          )
+          </td>
+          <td>
+          <a href="http://www.howtoacademy.com/courses/12-rules-life-antidote-chaos-jordan-b-peterson?utm_content=buffer266eb&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">12 Rules for Life: An Antidote to Chaos</a>
+
+          </td>
+          <td>
+          <a href="http://bit.ly/2APeNUu">Live Video Feed Tickets Available</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          17-Jan – Amsterdam (
+          <a href="https://wickedgrounds.nl/event-locatie-amsterdam/the-warehouse/">The Warehouse</a>
+          )
+          </td>
+          <td>
+          <a href="https://www.businessleaders.nl/events/envisioning-the-future/item796">Envisioning the Future</a>
+
+          </td>
+          <td>
+          <a href="https://www.businessleaders.nl/events/envisioning-the-future/item796">Buy Tickets</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          &nbsp;19 Jan – Rijswijk (
+          <a href="http://de-broodfabriek.nl/">The Bread Factory</a>
+          )
+          </td>
+          <td>
+          <a href="https://www.nederlandseleeuw.nl/">The Dutch Lion&nbsp;</a>
+          </td>
+          <td>
+          <a href="http://bit.ly/2lyhLrT">Buy Tickets</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          23 Jan – New York (
+          <a href="http://www.hunter.cuny.edu/kayeplayhouse">The Kaye Playhouse</a>
+          )
+          </td>
+          <td>
+          <a href="https://ci.ovationtix.com/34951/production/985341?performanceId=10239358">12 Rules for Life: An Antidote to Chaos</a>
+
+          </td>
+          <td>
+          Sold Out (
+          <a href="https://ci.ovationtix.com/34951/production/985341?performanceId=10239358">info</a>
+          )
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          &nbsp;26 Jan – Toronto (
+          <a href="http://www.wycliffecollege.ca/religionandsociety" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://www.wycliffecollege.ca/religionandsociety&amp;source=gmail&amp;ust=1515945937517000&amp;usg=AFQjCNGU18YVN4FcTk7WqUlk_BCJ-tXHAw">Wycliffe College</a>
+          )
+          </td>
+          <td>
+          <a href="https://www.facebook.com/events/519622488393793/">&nbsp;Is there Meaning in Life?</a>
+          </td>
+          <td>
+          <a href="https://www.youtube.com/watch?v=pDDQOCXBrAw" target="_blank" rel="noopener">Live Stream Available</a>
+
+          </td>
+        </tr>
+
+
+
+      </tbody>
+    </table>
+   </div>
+  </div>
+
+
+
+{% endblock %}
